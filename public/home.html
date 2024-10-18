@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firebase App with Authentication and Social Networks">
+    <title>Alexander Cultural Experience</title>
+   
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+
+
+    
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
+    
+
+    <style>
+        body {
+            background-color: rgb(245, 233, 216);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        ol,
+        ul {
+            padding-left: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        #sign-out {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: #dc3545;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #sign-out:hover {
+            background-color: #c82333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Alexander's Cultural Experience</h1>
+    <div>
+        <!-- Verifica la ruta de la imagen -->
+        <img src="IMG/IMG1.jpg" alt="Cultural celebration with people in traditional attire" width="150" height="150">
+        <div>
+            <h2>Two Shock Experiences</h2>
+            <ol>
+                <li>A lot of people from different countries.
+                    <ul>
+                        <li>It is fascinating to see many different physical features in person and experience various cultures. I love having different conversations with each one because everyone has unique stories about their culture and food, which provides an incredible perspective on the world.</li>
+                    </ul>
+                </li>
+                <li>The security.
+                    <ul>
+                        <li>I'm from Ecuador, a country where safety can be a concern. Here in Canada, I can go out with my phone without the fear of being stolen. I love this feeling of security.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <h2>Two Things I Miss from Ecuador</h2>
+        <ol>
+            <li>The food
+                <ul>
+                    <li>I really miss the traditional food, especially "encebollado" (a traditional fish soup) that I enjoyed every weekend. It’s my favorite dish from Ecuador, and I miss eating things like "bolón."</li>
+                </ul>
+            </li>
+            <li>The locations
+                <ul>
+                    <li>I miss visiting the beautiful beaches in Ecuador and places like "Quilotoa," a stunning lake located in a volcano. I also miss the Amazon rainforest and the unique culture of the people living there.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <h1>I Love Vancouver</h1>
+    <ul>
+        <li>I love this beautiful city with countless activities to do and many parks to explore.</li>
+    </ul>
+
+    <h1>My Personal Goal</h1>
+    <ul>
+        <li>My personal goal is to graduate in my field and secure a job at EA Games because I have a passion for gaming and want to contribute to the industry.</li>
+    </ul>
+    <div class="row">
+        <div class="col-lg-12">
+            
+            <a id="sign-out" href="#">Sign Out</a>
+        </div>
+    </div>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/home.js"></script>
+</body>
+
+</html>
+
