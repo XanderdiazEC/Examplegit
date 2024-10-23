@@ -1,16 +1,16 @@
-// Importar las funciones necesarias de Firebase
+// Import firebase
 import { auth } from './firebase.js';
 import { signOut } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
 
-// Función para cerrar sesión
+// Logout function
 document.getElementById("sign-out").addEventListener("click", function() {
     signOut(auth).then(() => {
-        // Cerrado de sesión exitoso
+        // Logout succesful
         alert("Successfully signed out!");
         // Redirigir a la página de inicio de sesión (o donde desees)
         window.location.href = "index.html"; // Cambia a tu página de inicio de sesión
     }).catch((error) => {
-        // Ocurrió un error al cerrar sesión
+        // Error logout
         alert(`Error: ${error.message}`);
     });
 });

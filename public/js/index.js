@@ -52,7 +52,7 @@ document.getElementById("reset-password").addEventListener("click", function() {
         .catch(handleError);
 });
 
-// Manejo de redirección
+// Redirection 
 getRedirectResult(auth)
     .then((result) => {
         if (result) {
