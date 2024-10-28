@@ -83,14 +83,12 @@
         }
     </style>
 
-    <!-- Firebase CDN links for Firebase v8 -->
+    <!-- Firebase CDN links for Firebase v9 -->
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
     
     <script src="js/firebase.js" type="module"></script>
     <script src="js/index.js" type="module"></script>
-
-    </script>
 </head>
 <body>
     <div class="container">
@@ -110,6 +108,7 @@
 
         <button id="google-signin" class="btn social-btn">Sign in with Google</button>
         <button id="phone-signin" class="btn social-btn">Sign in with Phone</button>
+        <div id="recaptcha-container"></div>
     </div>
 </body>
 </html>

@@ -7,8 +7,8 @@ document.getElementById("sign-out").addEventListener("click", function() {
     signOut(auth).then(() => {
         // Logout succesful
         alert("Successfully signed out!");
-        // Redirigir a la página de inicio de sesión (o donde desees)
-        window.location.href = "index.html"; // Cambia a tu página de inicio de sesión
+        // To index
+        window.location.href = "index.html";
     }).catch((error) => {
         // Error logout
         alert(`Error: ${error.message}`);
